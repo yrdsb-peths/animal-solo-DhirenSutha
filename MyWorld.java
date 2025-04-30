@@ -7,7 +7,14 @@ public class MyWorld extends World {
         Elephant elephant = new Elephant();
         addObject(elephant, 300, 200);
         
+        createBread();
+    }
+    
+    public void createBread()
+    {
         Bread bread = new Bread();
-        addObject(bread, 300, 0);
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        addObject(bread, x, y);
     }
 }
