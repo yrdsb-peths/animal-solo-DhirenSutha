@@ -14,6 +14,12 @@ public class Elephant extends Actor
      */
     
     GreenfootSound elephantSound = new GreenfootSound("elephantsounds.mp3");
+    GreenfootImage idle = new GreenfootImage("images/elephant_idle/idle0.png");
+    
+    public Elephant()
+    {
+        setImage(idle);
+    }
     public void act()
     {
         if(Greenfoot.isKeyDown("left"))
